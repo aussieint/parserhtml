@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from requests import get
 
 
-new = f'/feed/?q=flask'
+new = f'/feed/?q=django'
 with open('base.csv', mode='w', encoding='utf8') as f:
     tt = DictWriter(f, fieldnames=['date', 'title', 'link', 'text'], delimiter=';')
     tt.writeheader()
